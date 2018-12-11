@@ -1,0 +1,44 @@
+
+.CartModal {
+    max-height: 100%;
+}
+
+@media (min-width:500px) {
+    .CartModal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+.CategoryTitle{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+   
+}
+.CategoryTitle>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    font-weight: 200;
+}
+
+.Content {
+    min-height: 500px;
+}
+.ClothingWrapper{
+    margin-top:50px;
+}
+
+form {
+    width:30%;
+    all : unset;
+    display: flex;
+    justify-content:center;
+}
+.SearchButton{
+    padding:10px;
+    box-sizing:border-box;
+    background-color:#E98074;
+    
+}

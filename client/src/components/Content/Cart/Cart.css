@@ -1,0 +1,103 @@
+.Cart{
+
+}
+
+.CartContainer{
+    display:flex;
+    justify-content: space-between;
+    width:calc(100%-20px );
+    margin:0 10px;
+}
+
+
+.CartTitle{
+    margin:10px 0 0 0;
+}
+.ZeroMessage{
+    margin: 10px 0 0 10px;
+}
+
+.CartItemContainer{
+    display:flex;
+    width:100%;
+    margin-right:10px;
+    justify-content: space-between;
+}
+
+.CartItem{
+    color:gray;
+}
+.CartItem:hover{
+    color:black;
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+.CartExit {
+    color:gray;
+    width:10px;
+    height:10px;
+    padding:20px;
+    font-weight: bold;
+    font-size:25px;
+    transition:all .1s ease;
+    position:relative;
+    top:-60px;
+    right:-5px;
+    box-sizing: border-box;
+    align-self:center;
+    float:right;
+}
+
+.CartExit::before{
+    content: 'x';
+}
+
+.CartExit:hover{
+    color:black;
+    cursor:pointer;
+}
+.Remove{
+    margin-left:20px;
+    float:right;
+    color:gray;
+}
+
+.Remove:hover{
+    color:black;
+    cursor:pointer;
+}
+
+.CartCancel{
+    color:gray;
+    padding:10px 0;
+    box-sizing:border-box;
+}
+
+.CartCancel:hover{
+    color:black;
+    cursor:pointer;
+}
+
+.CartItems{
+    max-height:300px;
+    overflow-y: auto;
+    width:100%;
+}
+
+@media (max-width: 500px){
+    .CartExit{
+        top:-55px;
+        right:0;
+    }
+    .CartItems{
+        max-height:400px;
+    }
+}
+.ItemSize{
+    margin:0 50px;
+}
+
+.FullItem{
+    margin-bottom:10px;
+}

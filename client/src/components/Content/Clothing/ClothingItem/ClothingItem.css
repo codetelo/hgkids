@@ -1,0 +1,56 @@
+.ClothingItem{
+    display:flex;
+    flex-flow:column;
+    box-sizing: border-box;
+    padding-bottom:10px;
+    font-family: 'Oswald',sans-serif;
+    -webkit-box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    -moz-box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    z-index:1;
+    background-color:#EAE7DC;
+    
+    transition: all .3s ease-in-out;
+    color:rgb(170, 153, 129);
+    
+}
+.ClothingItem>p,h3{
+    margin:5px auto;
+
+}
+.ClothingItem>img{
+    width:100%;
+    height:auto;
+}
+
+.ClothingItem:hover{
+    transform: scale(1.2);
+    z-index:49;
+    cursor:pointer;
+}
+@media (max-width:650px){
+    .ClothingItem{
+        width:80%;
+        margin: 0 10% 50px 10%;
+    }
+}
+@media (min-width:1000px){
+    .ClothingItem{
+        width:19%;
+        margin: 0 calc(5%/10) 50px calc(5%/10);
+    }
+}
+
+@media (min-width:800px) and (max-width: 1000px){
+    .ClothingItem{
+        width:30%;
+        margin:0 calc(10%/6) 50px calc(10%/6);
+    }
+}
+@media (min-width:650px ) and (max-width: 800px){
+    .ClothingItem{
+        width:30%;
+        margin:0 calc(10%/6) 50px calc(10%/6);
+    }
+}
+

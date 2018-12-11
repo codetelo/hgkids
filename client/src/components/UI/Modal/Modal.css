@@ -1,0 +1,36 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 100%;
+    -webkit-box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    -moz-box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    box-shadow: 6px 13px 41px -8px rgba(0,0,0,0.63);
+    padding: 16px;
+    bottom:25%;
+    box-sizing: border-box;
+    transition: all 0.8s ease-in-out;
+    min-height:150px;
+    
+}
+
+@media (min-width:800px) {
+    .Modal {
+        width: 800px;
+        left: calc(50% - 400px);
+    }
+    .Modal img{
+        width:200px;
+    }
+}
+@media (max-width: 500px){
+    .Modal{
+        bottom:0;
+        padding:0;
+        margin:0;
+
+    }
+    
+}
+
+

@@ -1,0 +1,59 @@
+.Clothing{
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    margin:0 10px 0 0;
+    transition: all 1s ease;
+    position:relative;
+    min-height:500px;
+    box-sizing:border-box;
+    margin:0 auto;
+}
+
+@media (min-width:1000px){
+    .Clothing{
+        width:80%;
+    }
+}
+.slide-enter {
+    opacity: 0.01;
+    transform: translate(-400px, 0);
+}
+
+.slide-enter-active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 500ms linear;
+}
+
+.slide-exit {
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+.slide-exit-active {
+    opacity: 0.01;
+    transform: translate(400px, 0);
+    transition: all 500ms linear;
+}
+
+.NoItems{
+    margin:0 auto;
+    width:50%;
+}
+
+@media (max-width:500px){
+    .NoItems{
+        width:80%;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .NoItems{
+        width:65%;
+        
+    }
+}

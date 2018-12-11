@@ -1,0 +1,29 @@
+.NavigationItem {
+    color:#123142;
+    margin:15px 0;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    font-size:30px;
+    
+}
+
+.NavigationItem div {
+    color:#8E8D8A;
+    box-sizing: border-box;
+    display:inline-block;
+    text-decoration: none;
+    border-bottom:2px solid transparent;
+    transition:all .3s ease-in-out;
+    padding:10px 0 0 0;
+}
+
+.NavigationItem div:hover,
+.NavigationItem div:active,
+.NavigationItem div.active {
+    color:#123142;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    cursor:pointer;
+
+}
